@@ -14,9 +14,9 @@ const connect = () => {
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
     conn.write('Name: MVH');
-  })
+  });
 
-  return connect;
+  return conn;
 };
 
 module.exports = { connect };
